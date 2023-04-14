@@ -56,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
         //switch문의 getCheckerRadioButtonID에서 오류 -> 잘못 없음
         //daehwaView의 ImageView의 src바꾸려하는데에서 오류 -> xml파일의 ImageView에 접근 방식은 잘못 없는것 같음
         //대화상자에 뷰를 적용하니까 show()두번째로 콜 했을때 앱 크래시
+        
+        //switch - getCheckerRadioButton -> no bug
+        //daehwaView-ImageView-src change -> no bug
+        //CRASHES when calling dialog 2nd times after applying view to the dialog -> dlg.show();
         dlg.setView(daehwaView);
 
         btnshow.setOnClickListener(new View.OnClickListener() {
